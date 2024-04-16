@@ -133,7 +133,7 @@ type WorkItemTableProps = {
   data: WorkItem[];
 };
 
-export function TimesheetsTable({ data }: Readonly<WorkItemTableProps>) {
+export function WorkItemsTable({ data }: Readonly<WorkItemTableProps>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
