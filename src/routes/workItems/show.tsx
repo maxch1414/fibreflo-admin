@@ -4,7 +4,7 @@ import { WorkItem } from "@/types";
 import { WorkItemsTable } from "@/components/workItems/table";
 import { getAllWorkItems } from "@/actions/workItems";
 
-export function ShowTimesheets() {
+export function ShowWorkItems() {
   const { getToken } = useAuth();
 
   const { isLoading, isError, error, data } = useQuery({

@@ -9,6 +9,7 @@ import RootLayout from "./layouts/root";
 import { ShowTimesheets } from "./routes/timesheets/show";
 import { ShowTimesheet } from "./routes/timesheets/showSingle";
 import { Toaster } from "./components/ui/sonner";
+import { ShowWorkItems } from "./routes/workItems/show";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/timesheets/:id",
         element: <ShowTimesheet />,
+      },
+      {
+        path: "/workitems",
+        element: <ShowWorkItems />,
       },
     ],
   },
