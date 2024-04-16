@@ -131,7 +131,7 @@ const columns: ColumnDef<Timesheet>[] = [
             >
               Copy Date Of Work
             </DropdownMenuItem>
-            {/* TODO : Navigate to timesheet */}
+            {/* TODO : Navigate to timesheet on click */}
             <DropdownMenuItem>View Timesheet details</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
