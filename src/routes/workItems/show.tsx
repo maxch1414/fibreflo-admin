@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "@clerk/clerk-react";
 import { WorkItem } from "@/types";
 import { WorkItemsTable } from "@/components/workItems/table";
+import { getAllWorkItems } from "@/actions/workItems";
 
 export function ShowTimesheets() {
   const { getToken } = useAuth();
