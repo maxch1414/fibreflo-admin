@@ -2,6 +2,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import {
   ClerkProvider,
   SignedIn,
+  SignInButton,
   SignedOut,
   UserButton,
 } from "@clerk/clerk-react";
@@ -96,7 +97,7 @@ export default function RootLayout() {
             <UserButton />
           </SignedIn>
           <SignedOut>
-            <Link to="/sign-in">Sign In</Link>
+            <SignInButton />
           </SignedOut>
         </div>
       </header>
